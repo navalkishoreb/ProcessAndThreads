@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProcessAndThreads</string>
+    <string name="title_activity_first">FirstActivity</string>
+
+    <string name="launch_second_activity">Launch Second Activity</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="start_service">Start Service</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="shared_uid_label">elderBrother</string>
+</resources>

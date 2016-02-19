@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="edu.navalkishoreb.processandthreads"
+    android:sharedUserId="edu.navalkishoreb"
+    android:sharedUserLabel="@string/shared_uid_label"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:process=":goodProcess"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Base Application"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/title_activity_first"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:process=":newProcess"
+            android:label="@string/title_activity_second">
+        </activity>
+
+        <service
+            android:name=".FirstService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+    </application>
+
+</manifest>
